@@ -88,7 +88,38 @@ html{
 } */
 
 
+button{
+    background-color: rgb(170, 101, 101);
+    color: white;
+    font-family: ibm;
+    font-size: 1.5em;
+    padding: 1%;
+    font-weight: bold;
+    border-style: solid; 
+    border-radius: 300px;
+    border-color: rgb(185, 132, 132);
+    padding-bottom: 1.5%;
 
+}
+
+button:hover{
+    background-color: antiquewhite;
+    color: black;
+    border-color: transparent;
+
+    box-shadow: 0px 0px 30px 0px #ffffff;
+
+}
+
+.nav-button{
+    padding: 10%;
+    width: 7rem;
+    box-shadow: 0px 0px 10px 0px #a53f3f;
+}
+
+.nav-button:hover{
+    box-shadow: 0px 0px 20px 0px #a53f3f;;
+}
 
 nav{
     /* background-color:rgba(0, 255, 255, 0.076); */
@@ -151,7 +182,7 @@ nav ul{
 
 nav li{
 
-    outline: red solid 0px;
+    outline: red none 0px;
 
     /* display: inline-block; */
     /* margin-left: 120px; */
@@ -222,7 +253,13 @@ nav a:hover::before{
     justify-content: center;
     flex-flow: column wrap;
     translate: 11% 0; 
+
 }
+
+.left button{
+    translate: 0 50%;
+}
+
 .right{
     grid-column: 2;
     width: 50vw;
@@ -237,6 +274,7 @@ nav a:hover::before{
 
 
 .tagline-header{
+    
     font-size: 2em;
     font-family: IBM;
     color: rgb(215, 179, 179);   
@@ -256,52 +294,70 @@ body{
     /* background-image: url(./images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg); */
     background-size: cover;
     margin: 0;
+
+
+    
+}
+
+.body-below-frontpage{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .container-1{
+    grid-column-start: 2;
+
     height: 100vh;
+    margin-top: 10vh;
+
+    text-align: center;
+
+
+}
+.body-below-frontpage>*{
+    outline: purple none 10px;
+
+}
+.container-1>*{
+    outline: red none 2px;
+
 }
 
 
 .text-body-1{
-    font-size: 2.5em;
+
+    font-size: 1.5em;
     font-family: IBM;
 
-    padding-left: 10rem;
-    padding-right: 10rem;
-
 }
-
-.text-body-2{
-    font-size: 2em;
-    font-family: IBM;
-    
-    padding-left: 18rem;
-    padding-right: 18rem;
-    grid-column: 1;
+.text-body-1>*{
+    outline: blue solid 3px;
 }
-
-
 
 .container-2{
+    grid-column: 1/4;
 
     display: grid;
     background-image: url(./images/photos/cloud.jpg);
     background-repeat:no-repeat;
     background-size: 100vw;
     background-position: center center;
-    /* background-clip: */
-
-    
-
-    /* width: 100vw; */
-    /* position: relative; */
-    /* left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw; */
 
 }
+
+.text-body-2{
+    font-size: 2em;
+    font-family: IBM;
+
+    padding-left: 25rem;    
+    padding-right: 25rem;    
+
+
+}
+
+
+
+
 
 #text-bg-color{
     background-color: rgba(255, 235, 205, 0.649);
